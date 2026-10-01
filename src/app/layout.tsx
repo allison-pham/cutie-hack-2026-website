@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Geist, Geist_Mono, Labrada } from "next/font/google";
-import Header from "./components/Header";
+import Header from "../components/Header";
 import "./globals.css";
 
 const geistSans = Geist({

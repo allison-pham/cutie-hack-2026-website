@@ -1,6 +1,6 @@
 import ScheduleUI from "./schedule/ScheduleUI";
-import { GoogleEvent } from "@/app/types/schedule";
-import { api } from "@/app/utils/api";
+import { GoogleEvent } from "../types/schedule";
+import { api } from "../utils/api";
 import Image from "next/image"
 
 const SectionTitle = ({ children }: { children: string }) => (
