@@ -221,7 +221,7 @@ const Header = () => {
                       }}
                     >
                       <summary
-                        className={`after:from-gold-500 after:to-brown-700 relative inline-flex cursor-pointer list-none items-center gap-1 whitespace-nowrap transition-transform duration-300 ease-out after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-gradient-to-r after:transition-opacity after:duration-300 ${active ? "after:opacity-100" : "after:opacity-0 hover:after:opacity-50"}`}
+                        className={`after:from-gold-500 after:to-brown-700 relative inline-flex cursor-pointer list-none items-center gap-1 whitespace-nowrap transition-transform duration-300 ease-out after:absolute after:bottom-0 after:left-0 after:h-[3px] after:rounded-full after:w-full after:bg-gradient-to-r after:transition-opacity after:duration-300 ${active ? "after:opacity-100" : "after:opacity-0 hover:after:opacity-50"}`}
                       >
                         {label}
                         <ChevronDown className="size-3.5" aria-hidden="true" />
@@ -254,7 +254,7 @@ const Header = () => {
                     key={href}
                     href={href}
                     onClick={(event) => scrollToSection(event, href.slice(1))}
-                    className={`after:from-gold-500 after:to-brown-700 relative inline-flex items-center gap-1 whitespace-nowrap transition-transform duration-300 ease-out after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-gradient-to-r after:transition-opacity after:duration-300 ${active ? "after:opacity-100" : "after:opacity-0 hover:after:opacity-50"}`}
+                    className={`after:from-gold-500 after:to-brown-700 relative inline-flex items-center gap-1 whitespace-nowrap transition-transform duration-300 ease-out after:absolute after:-bottom-0.5 after:left-0 after:h-[3px] after:rounded-full after:w-full after:bg-gradient-to-r after:transition-opacity after:duration-300 ${active ? "after:opacity-100" : "after:opacity-0 hover:after:opacity-50"}`}
                   >
                     {label}
                   </Link>
