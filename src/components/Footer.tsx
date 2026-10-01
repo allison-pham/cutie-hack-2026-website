@@ -108,21 +108,21 @@ const SocialCards = ({ mobile = false }: { mobile?: boolean }) => (
 
 const Footer = () => {
   return (
-    <footer id="footer" className="relative overflow-hidden">
-      <div className="flex flex-col items-center lg:flex-row lg:items-start lg:justify-end lg:gap-[clamp(50px,calc(50vw-462px),200px)]">
+    <footer id="footer" className="z-10 relative overflow-hidden">
+      <div className="flex flex-col items-center lg:flex-row lg:items-start lg:justify-end lg:gap-[5vw]">
         {/*opportunities */}
-        <div className="mt-30 flex w-full flex-col items-center gap-5 lg:w-auto">
-          <h2 className="font-fraunces text-white-100 w-full text-center text-4xl">
+        <div className="mt-30 flex w-full flex-col items-center gap-5 lg:mt-[10vw] lg:w-auto">
+          <h2 className="font-fraunces text-white-100 w-full text-center text-4xl lg:text-[2.5vw]">
             More Opportunities
           </h2>
 
-          <div className="font-fraunces flex flex-col gap-4 text-xl">
+          <div className="font-fraunces flex flex-col gap-4 text-xl lg:gap-[1vw] lg:text-[1.5vw]">
             {opportunities.map(({ title, href }) => (
               <a
                 key={title}
                 href={href}
                 target="_blank"
-                className="border-white-100 text-white-100 hover:from-white-100 rounded-2xl border-2 bg-blue-950/50 px-15 py-2 text-center shadow-xl transition-colors duration-300 ease-out hover:bg-linear-to-b hover:to-blue-100 hover:text-blue-900 min-[400px]:px-20"
+                className="border-white-100 text-white-100 hover:from-white-100 rounded-2xl border-2 bg-blue-950/50 px-15 py-2 text-center shadow-xl transition-colors duration-300 ease-out hover:bg-linear-to-b hover:to-blue-100 hover:text-blue-900 min-[400px]:px-20 lg:rounded-[1vw] lg:px-[6vw] lg:py-[0.6vw]"
               >
                 {title}
               </a>
@@ -130,7 +130,7 @@ const Footer = () => {
           </div>
         </div>
         {/*castle */}
-        <div className="relative z-20 mt-10 w-[min(92vw,320px)] shrink-0 self-end lg:mt-5 lg:w-[619.51px]">
+        <div className="relative z-20 mt-10 w-[min(92vw,330px)] shrink-0 self-end lg:mt-[5vw] lg:mb-[0vw] lg:w-[45vw]">
           <Image
             src="/footer/footer castle.svg"
             alt="castle"
@@ -164,7 +164,7 @@ const Footer = () => {
         </p>
       </div>
       {/* desktop ground */}
-      <div className="relative -mt-6 hidden lg:-mt-15 lg:block">
+      <div className="relative -mt-6 hidden lg:-mt-[4vw] lg:block xl:-mt-15">
         <Image
           src="/footer/footer grassland.svg"
           alt=""

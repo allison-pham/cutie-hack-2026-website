@@ -78,18 +78,23 @@ export default function FAQ() {
   return (
     <section
       id="faq"
-      className="relative flex w-full scroll-mt-20 flex-col items-center overflow-x-clip px-4 pb-[1.74vw]"
+      className="relative flex w-full scroll-mt-20 flex-col items-center overflow-x-clip px-4 pb-[1.74vw] lg:-mb-[40vw]"
     >
       <div className="relative aspect-1167/494 w-[81vw] max-lg:aspect-320/249 max-lg:w-screen">
-        <Image
-          src="/faq/FAQ + footer arch.svg"
-          alt=""
-          width={1167}
-          height={2645}
-          className="pointer-events-none absolute top-0 left-1/2 h-auto w-[81vw] max-w-none -translate-x-1/2 select-none max-lg:hidden"
-          priority
-          aria-hidden
-        />
+        <div
+          className="pointer-events-none absolute top-0 left-1/2 hidden w-[81vw] -translate-x-1/2 overflow-hidden lg:block"
+          style={{ height: "180vw" }}
+        >
+          <Image
+            src="/faq/FAQ + footer arch.svg"
+            alt=""
+            width={1167}
+            height={2645}
+            className="h-auto w-full max-w-none select-none"
+            priority
+            aria-hidden
+          />
+        </div>
         <Image
           src="/faq/faq entrance bg.svg"
           alt=""
@@ -122,11 +127,11 @@ export default function FAQ() {
               <Diamond />
             </h2>
 
-            <div className="after:bg-gold-500 relative grid min-h-0 flex-1 grid-cols-2 gap-x-[clamp(16px,3.3vw,64px)] gap-y-[clamp(8px,1.7vw,32px)] after:pointer-events-none after:absolute after:inset-y-0 after:left-1/2 after:w-px after:-translate-x-1/2 max-lg:flex-none max-lg:grid-cols-1 max-lg:after:hidden">
+            <div className="after:bg-gold-500 relative grid min-h-0 flex-1 grid-cols-2 gap-x-[clamp(16px,3.3vw,64px)] gap-y-[clamp(8px,1.7vw,32px)] after:pointer-events-none after:absolute after:inset-y-0 after:left-1/2 after:w-[2px] after:-translate-x-1/2 max-lg:flex-none max-lg:grid-cols-1 max-lg:after:hidden">
               {columns.map((col, colIndex) => (
                 <div
                   key={colIndex}
-                  className="flex flex-col"
+                  className="flex flex-col gap-[1.4vw]"
                 >
                   {col.map((item, itemIndex) => {
                     const index = colIndex * mid + itemIndex;
@@ -134,18 +139,24 @@ export default function FAQ() {
                       <div key={index}>
                         <button
                           type="button"
-                          className="font-fraunces flex w-full cursor-pointer items-start justify-between gap-[1.25vw] border-none bg-transparent py-[0.56vw] text-left text-[1.528vw] text-red-700 max-lg:gap-[4.8vw] max-lg:py-2 max-lg:text-[5.2vw]"
+                          className="font-labrada flex w-full cursor-pointer items-start justify-between gap-[1.25vw] border-none bg-transparent py-0 text-left text-[1.528vw] text-red-700 max-lg:gap-[4.8vw] max-lg:text-[5.2vw]"
                           onClick={() =>
                             setOpenIndex(openIndex === index ? null : index)
                           }
                         >
                           <span
                             aria-hidden
-                            className="font-fraunces shrink-0 text-red-700"
+                            className={`mt-[0.8vw] ml-[1.5vw] flex shrink-0 items-center justify-center transition-transform duration-300 ease-out ${openIndex === index ? "rotate-90" : "rotate-0"} max-lg:mt-[3vw]`}
                           >
-                            {openIndex === index ? "▴" : "▾"}
+                            <Image
+                              src="/expandArrow.svg"
+                              alt="expandArrow"
+                              height={10}
+                              width={10}
+                              className="h-auto w-[0.5vw] max-lg:w-[1.5vw]"
+                            />
                           </span>
-                          <span className="mr-[2.22vw] flex-1 max-lg:mr-[8vw]">
+                          <span className="font-labrada mr-[2.22vw] flex-1 max-lg:mr-[8vw]">
                             {item.question}
                           </span>
                         </button>
@@ -157,7 +168,7 @@ export default function FAQ() {
                           }`}
                         >
                           <div className="overflow-hidden">
-                            <p className="font-labrada px-[2.43vw] pt-[0.28vw] pb-[0.69vw] text-[1.25vw] leading-normal text-red-500 max-lg:px-[6.4vw] max-lg:pt-[1.07vw] max-lg:pb-[2.67vw] max-lg:text-[4.2vw]">
+                            <p className="font-labrada pl-[3.25vw] pr-[2.43vw] -pt-[10vw] text-[1.25vw] leading-normal text-red-500 max-lg:px-[8vw] max-lg:pt-[1.07vw] max-lg:pb-[2.67vw] max-lg:text-[4.2vw]">
                               {item.answer}
                             </p>
                           </div>

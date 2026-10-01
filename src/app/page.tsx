@@ -22,8 +22,8 @@ export default function Home() {
       <Schedule />
       <Sponsors />
       <Industry />
-      <Team />
-      <FAQ /> */}
+      <Team /> */}
+      <FAQ />
       <Footer />
     </main>
   );
