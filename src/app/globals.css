@@ -35,8 +35,8 @@
   --color-gray-100: #e1ded2;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-fraunces: var(--font-fraunces-family);
-  --font-labrada: var(--font-labrada-family);
+  --font-fraunces: var(--font-fraunces);
+  --font-labrada: var(--font-labrada);
 }
 
 html {
