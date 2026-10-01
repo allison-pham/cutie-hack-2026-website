@@ -9,10 +9,10 @@ const opportunities = [
     title: "ACM at UCR",
     href: "https://acmucr.org/",
   },
-  {
-    title: "Feedback Survey",
-    href: "idk",
-  },
+  // {
+  //   title: "Feedback Survey",
+  //   href: "idk",
+  // },
 ];
 
 const socialCards = [
