@@ -17,12 +17,12 @@ export default function Home() {
       <Hero />
       <Register />
       <About />
-      <PastProjects />
-      <Tracks />
-      <Schedule />
-      <Sponsors />
-      <Industry />
-      <Team />
+      {/* <PastProjects /> */}
+      {/* <Tracks /> */}
+      {/* <Schedule /> */}
+      {/* <Sponsors /> */}
+      {/* <Industry /> */}
+      {/* <Team /> */}
       <FAQ />
       <Footer />
     </main>
