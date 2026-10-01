@@ -17,13 +17,13 @@ export default function Home() {
       <Hero />
       <Register />
       <About />
-      <PastProjects />
+      {/* <PastProjects />
       <Tracks />
       <Schedule />
       <Sponsors />
       <Industry />
       <Team />
-      <FAQ />
+      <FAQ /> */}
       <Footer />
     </main>
   );
