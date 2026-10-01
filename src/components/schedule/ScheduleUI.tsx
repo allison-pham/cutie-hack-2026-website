@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
-import { GoogleEvent, EventTypes, LABELS } from "@/app/types/schedule";
+import { GoogleEvent, EventTypes, LABELS } from "@/src/types/schedule";
 import ToggleTypes from "./ToggleTypes";
 import EventCard from "./EventCard";
 import Calendar from "./Calendar";

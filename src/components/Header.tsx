@@ -17,10 +17,10 @@ const navLinks = [
   {
     href: "#about",
     label: "About",
-    dropdown: [
-      { href: "#about", label: "About Cutie Hack" },
-      { href: "#past-projects", label: "Past Projects" },
-    ],
+    // dropdown: [
+    //   { href: "#about", label: "About Cutie Hack" },
+    //   { href: "#past-projects", label: "Past Projects" },
+    // ],
   },
   { href: "#tracks", label: "Tracks" },
   { href: "#schedule", label: "Schedule" },

@@ -1,6 +1,6 @@
 "use client";
 
-import { GoogleEvent, EventTypes } from "@/app/types/schedule";
+import { GoogleEvent, EventTypes } from "@/src/types/schedule";
 import Image from "next/image";
 
 type Props = {
