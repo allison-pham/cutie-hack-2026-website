@@ -122,7 +122,7 @@ const Footer = () => {
                 key={title}
                 href={href}
                 target="_blank"
-                className="border-white-100 text-white-100 hover:from-white-100 rounded-2xl border-2 bg-blue-950/50 px-15 py-2 text-center shadow-xl transition-colors duration-300 ease-out hover:bg-linear-to-b hover:to-blue-100 hover:text-blue-900 min-[400px]:px-20 lg:rounded-[1vw] lg:px-[5.5vw] lg:py-[0.6vw]"
+                className="border-white-100 text-white-100 hover:from-white-100 rounded-2xl border-2 bg-blue-950/50 px-15 py-2 text-center shadow-xl transition-colors duration-300 ease-out hover:bg-linear-to-b hover:to-blue-100 hover:text-blue-900 min-[400px]:px-20 lg:rounded-[1vw] lg:px-[6vw] lg:py-[0.6vw]"
               >
                 {title}
               </a>

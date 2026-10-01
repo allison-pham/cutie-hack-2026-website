@@ -81,10 +81,9 @@ export default function FAQ() {
       className="relative flex w-full scroll-mt-20 flex-col items-center overflow-x-clip px-4 pb-[1.74vw] lg:-mb-[40vw]"
     >
       <div className="relative aspect-1167/494 w-[81vw] max-lg:aspect-320/249 max-lg:w-screen">
-        {/* replace the bare arch <Image> with: */}
         <div
           className="pointer-events-none absolute top-0 left-1/2 hidden w-[81vw] -translate-x-1/2 overflow-hidden lg:block"
-          style={{ height: "180vw" }} // same trim you used in clip-path
+          style={{ height: "180vw" }}
         >
           <Image
             src="/faq/FAQ + footer arch.svg"
