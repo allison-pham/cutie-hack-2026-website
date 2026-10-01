@@ -265,24 +265,28 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     min-width: 11.2cqw;
     height: 3.75cqw;
     padding: 0 1.25cqw;
-    border-radius: 0.65cqw;
+
+    
+    border-radius: 1.1cqw;
 
     font-family: var(--font-fraunces), serif;
     font-size: 1.35cqw;
 
-
     text-decoration: none;
-    transition: transform 0.18s ease;
+
+    transition: background 0.18s ease;
 }
 
 .primaryButton {
     color: #334356;
     background: #e8b466;
 
-    border: 0.07cqw solid #d79b43;
+    
+    border: 0.13cqw solid #d79b43;
 
     box-shadow:
         0 0.2cqw 0.2cqw rgba(0, 0, 0, 0.18);
@@ -291,15 +295,26 @@
 .secondaryButton {
     color: white;
 
-    border: 0.07cqw solid rgba(255, 255, 255, 0.95);
+    
+    border: 0.13cqw solid rgba(255, 255, 255, 0.95);
 
     background: rgba(51, 67, 86, 0.28);
 }
 
-.primaryButton:hover,
-.secondaryButton:hover {
-    transform: translateY(-0.13cqw);
+
+.primaryButton:hover {
+    background: linear-gradient(180deg,
+            #FAF8F1 0%,
+            #E0B775 40%);
 }
+
+
+.secondaryButton:hover {
+    background: linear-gradient(180deg,
+            #FAF8F1 0%,
+            #D6ECF7 40%);
+}
+
 
 /* ========================================
    RABBIT / WATCH
@@ -916,7 +931,7 @@
 
         font-family: var(--font-fraunces), serif;
         font-size: 5.1vw;
-        font-weight: 600;
+        font-weight: 400;
 
 
 
