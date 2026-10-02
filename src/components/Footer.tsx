@@ -3,15 +3,15 @@ import Image from "next/image";
 const opportunities = [
   {
     title: "Citrus Hack",
-    href: "https://www.citrushack.com/",
+    href: "http://instagram.com/citrushack_ucr",
   },
   {
     title: "ACM at UCR",
-    href: "https://acmucr.org/",
+    href: "http://instagram.com/acm_ucr",
   },
   // {
   //   title: "Feedback Survey",
-  //   href: "idk",
+  //   href: "",
   // },
 ];
 
