@@ -320,9 +320,9 @@ export default function Hero() {
             Register Now
           </a>
 
-          <a href="#" className={styles.secondaryButton}>
+          {/* <a href="#" className={styles.secondaryButton}>
             Live Site
-          </a>
+          </a> */}
 
           <a
             href="https://cutie-hack-2026.devpost.com/"
