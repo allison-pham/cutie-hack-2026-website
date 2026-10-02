@@ -86,7 +86,7 @@ export default function FAQ() {
           style={{ height: "180vw" }}
         >
           <Image
-            src="/faq/FAQ + footer arch.svg"
+            src="/faq/FAQ_footer_arch.svg"
             alt=""
             width={1167}
             height={2645}
@@ -96,7 +96,7 @@ export default function FAQ() {
           />
         </div>
         <Image
-          src="/faq/faq entrance bg.svg"
+          src="/faq/faq_entrance_bg.svg"
           alt=""
           width={320}
           height={274}
@@ -184,7 +184,7 @@ export default function FAQ() {
       </div>
 
       <Image
-        src="/faq/FAQ bg checkers.svg"
+        src="/faq/FAQ_bg_checkers.svg"
         alt=""
         width={1440}
         height={1079}
@@ -192,7 +192,7 @@ export default function FAQ() {
         aria-hidden
       />
       <Image
-        src="/faq/FAQ bg checkers mobile.svg"
+        src="/faq/FAQ_bg_checkers_mobile.svg"
         alt=""
         width={320}
         height={1186}
@@ -200,7 +200,7 @@ export default function FAQ() {
         aria-hidden
       />
       <Image
-        src="/faq/footer bg checkers.svg"
+        src="/faq/footer_bg_checkers.svg"
         alt=""
         width={1439}
         height={1094}
