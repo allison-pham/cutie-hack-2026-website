@@ -138,7 +138,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="text-white-100 w-full px-6 py-16 sm:px-14 lg:px-20"
+      className="relative z-1 text-white-100 w-full px-6 py-16 sm:px-14 lg:px-20"
     >
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 xl:flex-row xl:items-start xl:justify-between xl:gap-12">
         <div className="flex w-full max-w-2xl flex-col items-center gap-8 xl:max-w-xl xl:items-start">

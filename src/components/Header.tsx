@@ -181,7 +181,7 @@ const Header = () => {
   }, [menuOpen]);
 
   return (
-    <header className="font-fraunces sticky top-0 z-50 w-full text-2xl text-blue-900">
+    <header className="font-fraunces fixed inset-x-0 top-0 z-50 w-full text-2xl text-blue-900">
       {/*large screen version*/}
       <div className="hidden pt-5 lg:block lg:px-15 xl:px-20">
         <div className="from-gold-500 to-brown-700 rounded-[30px] bg-gradient-to-b p-[3px] shadow-sm">
