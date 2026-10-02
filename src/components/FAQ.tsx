@@ -78,7 +78,7 @@ export default function FAQ() {
   return (
     <section
       id="faq"
-      className="relative flex w-full scroll-mt-20 flex-col items-center overflow-x-clip px-4 pb-[1.74vw] lg:-mb-[40vw]"
+      className="relative z-1 flex w-full scroll-mt-20 flex-col items-center overflow-x-clip px-4 pb-[1.74vw] lg:-mb-[40vw]"
     >
       <div className="relative aspect-1167/494 w-[81vw] max-lg:aspect-320/249 max-lg:w-screen">
         <div
