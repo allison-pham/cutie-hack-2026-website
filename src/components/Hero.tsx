@@ -23,7 +23,7 @@ export default function Hero() {
     }
   }, []);
   useEffect(() => {
-    const targetDate = new Date("2026-11-21T00:00:00-08:00");
+    const targetDate = new Date("2026-11-21T08:00:00-08:00");
 
     const updateCountdown = () => {
       const difference = targetDate.getTime() - Date.now();
