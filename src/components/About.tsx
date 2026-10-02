@@ -45,6 +45,9 @@ const VALUE_CARDS = [
   },
 ];
 
+const titleShadow = "[text-shadow:0_6px_4px_rgba(0,0,0,0.25)]";
+const diamondShadow = "drop-shadow-[0_6px_4px_rgba(0,0,0,0.25)]";
+
 const SectionTitle = ({ children }: { children: string }) => (
   <h2 className="flex items-center justify-center gap-3 leading-none sm:gap-10">
     <Image
@@ -52,10 +55,12 @@ const SectionTitle = ({ children }: { children: string }) => (
       alt=""
       width={43}
       height={48}
-      className="block h-5 w-auto sm:h-9"
+      className={`block h-5 w-auto sm:h-9 ${diamondShadow}`}
       aria-hidden
     />
-    <span className="from-white-100 font-fraunces bg-linear-to-b to-orange-500 bg-clip-text text-center text-[22px] font-semibold tracking-normal text-transparent sm:text-[32px]">
+    <span
+      className={`from-white-100 font-fraunces inline-block bg-linear-to-b to-orange-500 bg-clip-text pb-1 text-center text-[22px] font-semibold tracking-normal text-transparent sm:text-[32px] ${titleShadow}`}
+    >
       {children}
     </span>
     <Image
@@ -63,7 +68,7 @@ const SectionTitle = ({ children }: { children: string }) => (
       alt=""
       width={43}
       height={48}
-      className="block h-5 w-auto sm:h-9"
+      className={`block h-5 w-auto sm:h-9 ${diamondShadow}`}
       aria-hidden
     />
   </h2>
@@ -175,7 +180,7 @@ const About = () => {
       </div>
 
       <div className="mx-auto mt-4 flex max-w-6xl flex-col items-center gap-3 xl:items-start">
-        <h3 className="from-white-100 font-fraunces bg-linear-to-b to-orange-500 bg-clip-text text-center text-[28px] font-semibold tracking-normal text-transparent sm:text-[32px] xl:text-left">
+        <h3 className={`from-white-100 font-fraunces inline-block bg-linear-to-b to-orange-500 bg-clip-text pb-1 text-center text-[28px] font-semibold tracking-normal text-transparent sm:text-[32px] xl:text-left ${titleShadow}`}>
           Our Values
         </h3>
         <p className="font-labrada text-center text-base text-gray-100 sm:text-lg xl:text-left xl:text-[22px]">

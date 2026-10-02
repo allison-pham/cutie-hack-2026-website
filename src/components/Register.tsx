@@ -59,7 +59,7 @@ const cardFlipper =
 const cardFace =
   "absolute inset-0 [backface-visibility:hidden] [-webkit-backface-visibility:hidden]";
 const registerDropShadow =
-  "drop-shadow-[0_8px_4px_rgba(0,0,0,0.25)]";
+  "drop-shadow-[0_6px_4px_rgba(0,0,0,0.25)]";
 const registerButtonShadow =
   "shadow-[0_2.13px_4.26px_0_rgba(0,0,0,0.25)]";
 const applyButton =
@@ -75,7 +75,7 @@ const RegisterHeading = () => (
       className={`block h-9 w-auto ${registerDropShadow}`}
       aria-hidden
     />
-    <span className="from-white-100 font-fraunces inline-block bg-linear-to-b to-orange-500 bg-clip-text pb-1 text-[32px] font-semibold leading-normal tracking-normal text-transparent [text-shadow:0_8px_4px_rgba(0,0,0,0.25)]">
+    <span className="from-white-100 font-fraunces inline-block bg-linear-to-b to-orange-500 bg-clip-text pb-1 text-[32px] font-semibold leading-normal tracking-normal text-transparent [text-shadow:0_6px_4px_rgba(0,0,0,0.25)]">
       Register
     </span>
     <Image
@@ -392,11 +392,9 @@ const Register = () => {
                           rel="noopener noreferrer"
                           onClick={(event) => event.stopPropagation()}
                           onKeyDown={(event) => event.stopPropagation()}
-                          className={`${applyButton} group absolute right-[calc(5.5%+1rem)] bottom-[calc(12.4%+0.75rem)] h-8 w-52 rounded-xl! px-3 text-center text-base`}
+                          className={`${applyButton} absolute right-[calc(5.5%+1rem)] bottom-[calc(12.4%+0.75rem)] h-8 w-52 rounded-xl! px-3 text-center text-base`}
                         >
-                          <span className="inline-block transition-transform duration-200 ease-out group-hover:scale-90">
-                            Apply as {role.name}
-                          </span>
+                          Apply as {role.name}
                         </a>
                       )}
                     </div>
