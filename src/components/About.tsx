@@ -106,14 +106,14 @@ const ValueMirrorCard = ({
       aria-label={`${name} value, ${
         showDescription ? "showing description" : "click to read description"
       }`}
-      className="relative aspect-[243/283] w-full cursor-pointer appearance-none border-0 bg-transparent p-0 focus-visible:outline-none xl:h-[283px] xl:w-[243px] xl:shrink-0"
+      className="relative w-full cursor-pointer appearance-none border-0 bg-transparent p-0 focus-visible:outline-none xl:w-[243px] xl:shrink-0"
     >
       <Image
         src="/about/Value_Mirror.svg"
         alt=""
         width={243}
         height={283}
-        className="pointer-events-none h-full w-full select-none"
+        className="pointer-events-none h-auto w-full"
       />
       <span className="pointer-events-none absolute inset-[13.1%_9.8%_13.9%_10%] flex items-center justify-center px-2 sm:px-4">
         <span
@@ -170,13 +170,15 @@ const About = () => {
           </div>
         </div>
 
-        <Image
-          src="/about/stats_display.svg"
-          alt="Cutie Hack stats"
-          width={536}
-          height={599}
-          className="mx-auto h-auto w-full max-w-[536px] shrink-0 xl:mx-0"
-        />
+        <div className="mx-auto w-full max-w-[536px] shrink-0 xl:mx-0">
+          <Image
+            src="/about/stats_display.svg"
+            alt="Cutie Hack stats"
+            width={536}
+            height={599}
+            className="pointer-events-none h-auto w-full"
+          />
+        </div>
       </div>
 
       <div className="mx-auto mt-4 flex max-w-6xl flex-col items-center gap-3 xl:items-start">

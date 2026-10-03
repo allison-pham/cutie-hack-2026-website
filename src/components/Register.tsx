@@ -371,7 +371,7 @@ const Register = () => {
                         width={341}
                         height={227}
                         draggable={false}
-                        className="pointer-events-none h-full w-full"
+                        className="pointer-events-none h-auto w-full"
                       />
                     </div>
 
@@ -382,7 +382,7 @@ const Register = () => {
                         width={341}
                         height={227}
                         draggable={false}
-                        className="pointer-events-none h-full w-full"
+                        className="pointer-events-none h-auto w-full"
                       />
                       <p className="sr-only">{role.description}</p>
                       {role.applyHref && (
