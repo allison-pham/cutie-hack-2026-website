@@ -23,7 +23,7 @@ const roles: RoleCard[] = [
     name: "Mentor",
     description:
       "Meet a variety of hackers across engineering, design, and more. Guide hackers by providing project insight and advice.",
-    applyHref: "https://www.google.com",
+    applyHref: "cutiehack@gmail.com",
   },
   {
     id: "judge",
@@ -37,7 +37,7 @@ const roles: RoleCard[] = [
     name: "Speaker",
     description:
       "Help teach hackers technical and professional development skills. Answer questions and provide insight into career growth, fields, and more.",
-    applyHref: "https://www.google.com",
+    applyHref: "https://athena-wheat.vercel.app/cutiehack/forms/speaker",
   },
   {
     id: "sponsor",
