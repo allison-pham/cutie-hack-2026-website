@@ -30,7 +30,7 @@ const roles: RoleCard[] = [
     name: "Judge",
     description:
       "Industry professionals, researchers, and more that assess innovative hacker projects based on idea, value, technical complexity, feasibility, and scalability across hackathon tracks.",
-    applyHref: "https://www.google.com",
+    applyHref: "https://athena-wheat.vercel.app/cutiehack/forms/judge",
   },
   {
     id: "speaker",
