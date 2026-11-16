@@ -32,9 +32,9 @@ const SectionTitle = ({ children }: { children: string }) => (
 
 const Sponsors = () => {
   return (
-    <section id="sponsors" className="mt-6 w-full scroll-mt-15 text-black">
+    <section id="sponsors" className="mt-6 w-full scroll-mt-15 text-black pt-10">
       <SectionTitle>Sponsors</SectionTitle>
-      <div className="mx-auto mt-10 mt-20 mb-20 grid w-fit grid-cols-[repeat(4,12vw)] gap-x-6 lg:gap-x-10 max-lg:grid-cols-[repeat(2,34vw)]">
+      <div className="mx-auto mt-15 mb-20 grid w-fit grid-cols-[repeat(4,12vw)] gap-x-6 lg:gap-x-10 max-lg:grid-cols-[repeat(2,34vw)]">
         {SPONSORS.map((sponsor) => (
           <a
             key={sponsor.id}
