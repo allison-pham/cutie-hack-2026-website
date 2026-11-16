@@ -19,7 +19,9 @@ export default function Home() {
       <About />
       {/*
       <PastProjects />
+       */}
       <Tracks />
+      {/*
       <Schedule />
       <Sponsors />
       <Industry />
