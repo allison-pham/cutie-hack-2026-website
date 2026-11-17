@@ -17,15 +17,14 @@ export default function Home() {
       <Hero />
       <Register />
       <About />
-      {/*
+      
       <PastProjects />
-       */}
       <Tracks />
       {/*
       <Schedule />
-      <Sponsors />
       <Industry />
       <Team /> */}
+      <Sponsors />
       <FAQ />
       <Footer />
     </main>
