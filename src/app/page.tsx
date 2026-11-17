@@ -18,7 +18,7 @@ export default function Home() {
       <Register />
       <About />
       
-      <PastProjects />
+      {/*<PastProjects />*/}
       <Tracks />
       {/*
       <Schedule />
