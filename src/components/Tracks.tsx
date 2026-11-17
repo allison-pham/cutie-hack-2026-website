@@ -126,10 +126,11 @@ const Tracks = () => {
   return (
     <section
       id="tracks"
-      className="relative z-0 w-full overflow-visible px-4 pb-20 pt-24 text-white-100 sm:px-10 md:pb-24 md:pt-28 lg:px-16"
+      className="relative w-full overflow-visible px-4 pb-20 pt-50 text-white-100 sm:px-10 md:pb-24 md:pt-65 lg:pt-80 lg:px-16"
     >
       <div
-        className="pointer-events-none absolute left-1/2 top-0 z-0 w-[160%] max-w-none -translate-x-1/2 -translate-y-[7%] md:hidden"
+        data-tree-bg
+        className="pointer-events-none absolute left-1/2 -z-3 w-[160%] max-w-none -translate-x-1/2 -translate-y-[13%] md:hidden"
         aria-hidden
       >
         <Image
@@ -141,7 +142,8 @@ const Tracks = () => {
         />
       </div>
       <div
-        className="pointer-events-none absolute left-1/2 top-0 z-0 hidden w-[145%] max-w-none -translate-x-1/2 -translate-y-[18%] md:block lg:w-[150%] lg:-translate-y-[20%]"
+        data-tree-bg
+        className="pointer-events-none absolute left-1/2 -z-3 hidden w-[145%] max-w-none -translate-x-1/2 -translate-y-[18%] md:block md:-translate-y-[23%] lg:w-[150%] lg:-translate-y-[26%]"
         aria-hidden
       >
         <Image

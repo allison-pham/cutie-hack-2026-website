@@ -173,7 +173,7 @@ const PastProjects = () => {
       : `/pastprojects/shelfContents${shelfContents[curIndex]}.svg`;
 
   return (
-    <section id="past-projects" className="w-full px-10 py-16 text-black">
+    <section id="past-projects" className="relative w-full px-10 py-16 text-black">
       <h2 className="flex items-center justify-center gap-10 pb-1 md:pb-3">
         <Image
           src="/diamond.svg"
@@ -324,8 +324,16 @@ const PastProjects = () => {
             stringOffset={item.stringOffset}
           />
         ))}
+      </div>  
       </div>
-      </div>
+        <Image
+            src="/pastprojects/bgCloudSeparator.svg"
+            alt=""
+            width={320}
+            height={137}
+            aria-hidden
+            className="pointer-events-none -z-2 absolute left-1/2 h-auto w-screen max-w-none -translate-x-1/2 -translate-y-8/16 lg:hidden"
+          />
     </section>
   );
 };
