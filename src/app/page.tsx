@@ -19,8 +19,8 @@ export default function Home() {
       <About />
       
       <PastProjects />
-      {/*
       <Tracks />
+      {/*
       <Schedule />
       <Industry />
       <Team /> */}
