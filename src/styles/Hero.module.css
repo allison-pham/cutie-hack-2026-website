@@ -319,6 +319,7 @@
     background: linear-gradient(180deg,
             #FAF8F1 0%,
             #D6ECF7 40%);
+    color: #1e3a8a;
 }
 
 
@@ -975,19 +976,20 @@
             0 6px 6px rgba(0, 0, 0, 0.22);
     }
 }
+
 .mobilePrimaryButton,
 .mobileSecondaryButton {
-    transition:
-        transform 0.2s ease,
-        background-color 0.2s ease,
-        color 0.2s ease;
+    transition: background 0.18s ease;
 }
 
-.mobilePrimaryButton:hover,
-.mobileSecondaryButton:hover {
-    transform: translateY(-2px);
+.mobilePrimaryButton:hover {
+    background: linear-gradient(180deg,
+            #FAF8F1 0%,
+            #E0B775 40%);
 }
 
 .mobileSecondaryButton:hover {
-    color: #1e3a8a;
+    background: linear-gradient(180deg,
+            #FAF8F1 0%,
+            #D6ECF7 40%);
 }
