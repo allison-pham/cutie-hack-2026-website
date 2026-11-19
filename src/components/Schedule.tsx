@@ -39,10 +39,27 @@ const Schedule = async () => {
       })) as {items? : GoogleEvent[]};
     
     return (
-        <section id="schedule" className="relative z-1 text-black mt-6">
+        <section id="schedule" className="relative z-0 text-black mt-6">
             <SectionTitle>Schedule</SectionTitle>
 
       <ScheduleUI eventList={items ?? []} />
+      
+      <Image
+        src="/greenbg_desktop.svg"
+        alt=""
+        height={6676.45}
+        width={2168.4}
+        className="absolute -z-3 w-full top-1/2 hidden lg:block"
+      
+      />
+
+      <Image
+        src="/greenbg_mobile.svg"
+        alt=""
+        height={6590}
+        width={719.35}
+        className="absolute -z-3 top-1/4 w-full block lg:hidden"
+      />
     </section>
   );
 };
