@@ -227,7 +227,7 @@ const Header = () => {
                         <ChevronDown className="size-3.5" aria-hidden="true" />
                       </summary>
                       <div className="from-gold-500 to-brown-700 absolute top-[calc(100%)] -left-4 z-10 min-w-[clamp(200px,13vw,290px)] rounded-b-[25px] bg-gradient-to-b p-[3px] text-[clamp(14px,1.3vw,22px)] shadow-md">
-                        <div className="bg-white-100 rounded-b-[22px] px-[clamp(12px,1.2vw,20px)] py-[clamp(8px,1vw,16px)]">
+                        <div className="bg-white-100 flex flex-col items-start rounded-b-[22px] px-[clamp(12px,1.2vw,20px)] py-[clamp(8px,1vw,16px)]">
                           {dropdown.map((item) => (
                             <Link
                               key={item.href}

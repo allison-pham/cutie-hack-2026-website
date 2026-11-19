@@ -45,7 +45,7 @@ const Schedule = async () => {
       <ScheduleUI eventList={items ?? []} />
       
       <Image
-        src="/greenbg_desktop.svg"
+        src="/greenbg_desktop.png"
         alt=""
         height={6676.45}
         width={2168.4}
@@ -54,7 +54,7 @@ const Schedule = async () => {
       />
 
       <Image
-        src="/greenbg_mobile.svg"
+        src="/greenbg_mobile.png"
         alt=""
         height={6590}
         width={719.35}

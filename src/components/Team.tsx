@@ -200,7 +200,7 @@ export default function Team() {
       : teamMembers.filter((member) => member.team === selectedType);
 
   return (
-    <section className={styles.teamSection}>
+    <section id="team" className={styles.teamSection}>
       <SectionTitle>Team</SectionTitle>
 
       <ToggleTypes
