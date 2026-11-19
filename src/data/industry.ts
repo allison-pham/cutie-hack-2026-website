@@ -6,6 +6,7 @@ export type IndustryPerson = {
   title: string;
   company: string;
   linkedin: string;
+  image?: string;
 };
 
 export const industryPeople: IndustryPerson[] = [
@@ -15,6 +16,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Machine Learning Engineer",
     company: "TikTok (ByteDance)",
     linkedin: "https://www.linkedin.com/in/purnaraomallepaddi/",
+    image: "/industry/speaker/purna_mallepaddi.jpg",
   },
   {
     position: "Speakers",
@@ -22,6 +24,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Graduate student",
     company: "UC Riverside",
     linkedin: "",
+    image: "/industry/speaker/yung-sian_fang.png",
   },
   {
     position: "Speakers",
@@ -36,6 +39,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Software Engineer",
     company: "",
     linkedin: "https://www.linkedin.com/in/james-l-30985a103",
+    image: "/industry/speaker/james_luo.png",
   },
   {
     position: "Speakers",
@@ -43,6 +47,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Senior Associate Technical Designer",
     company: "Treyarch",
     linkedin: "https://www.linkedin.com/in/anna-jimerson",
+    image: "/industry/speaker/anna_jimerson.png",
   },
   {
     position: "Speakers",
@@ -50,6 +55,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Product Manager",
     company: "Dubsado",
     linkedin: "https://www.linkedin.com/in/matthew-moreno-76b58880",
+    image: "/industry/speaker/matt_moreno.jpg",
   },
   {
     position: "Speakers",
@@ -57,6 +63,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Electrical Engineer",
     company: "AECOM",
     linkedin: "https://www.linkedin.com/in/fahedelkhatib69",
+    image: "/industry/speaker/fahed_e.jpg",
   },
   {
     position: "Speakers",
@@ -64,6 +71,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Electrical Engineer",
     company: "EDGE Sound Research",
     linkedin: "https://www.linkedin.com/in/brandon-babu-332276204",
+    image: "/industry/speaker/brandon_babu.jpg",
   },
   {
     position: "Judges",
@@ -71,6 +79,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Staff Software Engineer",
     company: "Walmart E-commerce",
     linkedin: "https://www.linkedin.com/in/rahulratra",
+    image: "/industry/judges/rahul_ratra.png",
   },
   {
     position: "Judges",
@@ -78,6 +87,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Machine Learning Engineer",
     company: "TikTok",
     linkedin: "https://www.linkedin.com/in/purnaraomallepaddi/",
+    image: "/industry/judges/purna_mallepaddi.jpg",
   },
   {
     position: "Judges",
@@ -85,6 +95,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Data Analyst",
     company: "Options For Learning",
     linkedin: "https://www.linkedin.com/in/pragatiingole/",
+    image: "/industry/judges/pragati_ingole.png",
   },
   {
     position: "Judges",
@@ -92,6 +103,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Undergraduate (CET & IM)",
     company: "UC Santa Cruz",
     linkedin: "https://www.linkedin.com/in/animesh-alang-232713132/",
+    image: "/industry/judges/animesh_alang.jpg",
   },
   {
     position: "Judges",
@@ -99,6 +111,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Technical Architect",
     company: "Mphasis Corporation",
     linkedin: "https://www.linkedin.com/in/abhishek-gang-deb-8a961b2a/",
+    image: "/industry/judges/abhishek_gang_deb.jpg",
   },
   {
     position: "Judges",
@@ -106,6 +119,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Senior Software Engg Manager",
     company: "Walmart INC",
     linkedin: "https://www.linkedin.com/in/maheshdevireddy9/",
+    image: "/industry/judges/uma_maheswara_reddy_devireddy.jpeg",
   },
   {
     position: "Judges",
@@ -113,6 +127,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Data Engineer",
     company: "Meta",
     linkedin: "https://www.linkedin.com/in/shreeshaakulkarni",
+    image: "/industry/judges/shreeshaa_kulkarni.jpg",
   },
   {
     position: "Judges",
@@ -120,13 +135,15 @@ export const industryPeople: IndustryPerson[] = [
     title: "Sr. Director of Engineering",
     company: "Fox Corporation",
     linkedin: "https://www.linkedin.com/in/amit-m-0838a87",
+    image: "/industry/judges/amit_mishra.png",
   },
   {
     position: "Judges",
     name: "Damola Obaleke",
     title: "Software Engineer",
     company: "The New York Times",
-    linkedin: "https://linkedin.com/in/damola-obaleke",
+    linkedin: "https://www.linkedin.com/in/damola-obaleke",
+    image: "/industry/judges/damola_obaleke.jpg",
   },
   {
     position: "Judges",
@@ -134,6 +151,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Senior ML Research Engineer",
     company: "Brevian AI",
     linkedin: "https://www.linkedin.com/in/shivasankeerth/",
+    image: "/industry/judges/shiva_sankeerth_reddy_yarradla.jpg",
   },
   {
     position: "Judges",
@@ -141,13 +159,15 @@ export const industryPeople: IndustryPerson[] = [
     title: "Principal Product Manager",
     company: "Microsoft",
     linkedin: "https://www.linkedin.com/in/poojaravichandra",
+    image: "/industry/judges/pooja_ravichandra.png",
   },
   {
     position: "Judges",
     name: "Shayam Jayaraman",
     title: "Senior Principal Software Engineer",
     company: "Oracle",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/shayam-jayaraman-a4ba9662/",
+    image: "/industry/judges/shayam_jayaraman.jpg",
   },
   {
     position: "Judges",
@@ -155,27 +175,29 @@ export const industryPeople: IndustryPerson[] = [
     title: "Software Engineer",
     company: "Ford Motor Company",
     linkedin: "https://www.linkedin.com/in/chandra9503",
+    image: "/industry/judges/chandra_sekhar_singuru.png",
   },
   {
     position: "Judges",
     name: "Gopi Rajendran",
     title: "User Interface Designer",
     company: "Tata Consultancy Services",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/gopi-rajendran-ba946752/",
   },
   {
     position: "Judges",
     name: "Srinivas Prasad Govindan",
     title: "Staff Software Engineer",
     company: "Meta",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/srinivas-prasad-govindan-182b1316/",
   },
   {
     position: "Judges",
     name: "Olga Gerasimova",
     title: "Machine learning engineer",
     company: "Meta",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/olga-gerasimova-9a8aa559/",
+    image: "/industry/judges/olga_gerasimova.png",
   },
   {
     position: "Judges",
@@ -189,14 +211,16 @@ export const industryPeople: IndustryPerson[] = [
     name: "Saransh Bhardwaj",
     title: "Software Development Engineer",
     company: "Esri",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/saransh-bhardwaj/",
+    image: "/industry/judges/saransh_bhardwaj.jpg",
   },
   {
     position: "Judges",
-    name: "Gurkiran",
+    name: "Gurkiran Kaur",
     title: "Global Sourcing Manager",
     company: "Meta",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/gurkiran-/",
+    image: "/industry/judges/gurkiran_kaur.jpg",
   },
   {
     position: "Judges",
@@ -204,6 +228,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Senior Member of Technical Staff",
     company: "Salesforce",
     linkedin: "https://www.linkedin.com/in/siddhartharun7",
+    image: "/industry/judges/siddharth_arun.png",
   },
   {
     position: "Judges",
@@ -211,6 +236,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Principal AI Scientist",
     company: "SAP Labs",
     linkedin: "https://www.linkedin.com/in/vshalpnjabi",
+    image: "/industry/judges/vishal_punjabi.png",
   },
   {
     position: "Judges",
@@ -218,6 +244,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Co-founder and CTO",
     company: "AltOps",
     linkedin: "https://www.linkedin.com/in/kavishsoningra/",
+    image: "/industry/judges/kavish_soningra.jpeg",
   },
   {
     position: "Judges",
@@ -225,6 +252,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Co-founder & CTO",
     company: "Loandock",
     linkedin: "https://www.linkedin.com/in/dhruvsekhawat/",
+    image: "/industry/judges/dhruv_sekhawat.jpg",
   },
   {
     position: "Judges",
@@ -232,6 +260,7 @@ export const industryPeople: IndustryPerson[] = [
     title: "Product Leader, Payments and AI Agents",
     company: "Independent",
     linkedin: "https://www.linkedin.com/in/krishmunot",
+    image: "/industry/judges/krish_munot.png",
   },
   {
     position: "Judges",
@@ -239,13 +268,15 @@ export const industryPeople: IndustryPerson[] = [
     title: "Machine Learning Engineer",
     company: "Luxcedia Technologies",
     linkedin: "https://www.linkedin.com/in/christopher-zaldivar/",
+    image: "/industry/judges/christopher_zaldivar.jpeg",
   },
   {
     position: "Judges",
     name: "Cris Roberts",
     title: "PM",
     company: "Sound Ethics",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/cristian-roberts/",
+    image: "/industry/judges/cris_roberts.png",
   },
   {
     position: "Judges",
@@ -260,54 +291,29 @@ export const industryPeople: IndustryPerson[] = [
     title: "Vice President - Sr Manager of Software Engineering",
     company: "J. P. Morgan Chase & Co.",
     linkedin: "https://www.linkedin.com/in/swapnilpkale/",
+    image: "/industry/judges/swapnil_kale.png",
   },
   {
     position: "Judges",
     name: "Sri Vamsi Andavarapu",
     title: "Founding Software Engineer",
     company: "Pantile Investments Inc",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/srivamsia11/",
+    image: "/industry/judges/sri_vamsi_andavarapu.jpg",
   },
   {
     position: "Judges",
     name: "Yuqing Qu",
     title: "Data Scientist",
     company: "Niagara Bottling LLC",
+    linkedin: "https://www.linkedin.com/in/joyce-yuqing-qu-a37097100/",
+    image: "/industry/judges/yuqing_qu.jpg",
+  },
+  {
+    position: "Mentors",
+    name: "André Silva",
+    title: "",
+    company: "Codeset",
     linkedin: "",
-  },
-  {
-    position: "Mentors",
-    name: "First Name Last Name",
-    title: "Title",
-    company: "Company",
-    linkedin: "https://www.google.com",
-  },
-  {
-    position: "Mentors",
-    name: "First Name Last Name",
-    title: "Title",
-    company: "Company",
-    linkedin: "https://www.google.com",
-  },
-  {
-    position: "Mentors",
-    name: "First Name Last Name",
-    title: "Title",
-    company: "Company",
-    linkedin: "https://www.google.com",
-  },
-  {
-    position: "Mentors",
-    name: "First Name Last Name",
-    title: "Title",
-    company: "Company",
-    linkedin: "https://www.google.com",
-  },
-  {
-    position: "Mentors",
-    name: "First Name Last Name",
-    title: "Title",
-    company: "Company",
-    linkedin: "https://www.google.com",
   },
 ];

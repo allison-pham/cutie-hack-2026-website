@@ -241,55 +241,78 @@ const Industry = () => {
         </div>
 
         <ul className="mt-12 grid w-full grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-16 lg:grid-cols-4">
-          {visiblePeople.map((person, index) => (
-            <li
-              key={`${person.position}-${index}`}
-              className="flex flex-col items-center text-center"
-            >
-              <div className="group peer relative mt-8 size-28 sm:size-44">
-                <Image
-                  src={flowers[person.position].src}
-                  alt=""
-                  width={flowers[person.position].width}
-                  height={flowers[person.position].height}
-                  aria-hidden
-                  className={`pointer-events-none absolute top-1/2 left-1/2 h-auto max-w-none opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100 ${flowers[person.position].className}`}
-                />
-                <div
-                  className={`relative z-1 size-full overflow-hidden rounded-full border-4 ${ringColor[person.position]}`}
-                  style={{
-                    filter: "drop-shadow(0px 2.79px 2.79px rgba(0, 0, 0, 0.25))",
-                  }}
-                >
+          {visiblePeople.map((person) => {
+            const card = (
+              <>
+                <div className="group peer relative mt-8 size-28 sm:size-44">
                   <Image
-                    src="/industry/scotty.jpeg"
+                    src={flowers[person.position].src}
                     alt=""
-                    fill
-                    sizes="176px"
-                    className="object-cover"
+                    width={flowers[person.position].width}
+                    height={flowers[person.position].height}
+                    aria-hidden
+                    className={`pointer-events-none absolute top-1/2 left-1/2 h-auto max-w-none opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100 ${flowers[person.position].className}`}
                   />
+                  <div
+                    className={`relative z-1 size-full overflow-hidden rounded-full border-4 ${ringColor[person.position]}`}
+                    style={{
+                      filter:
+                        "drop-shadow(0px 2.79px 2.79px rgba(0, 0, 0, 0.25))",
+                    }}
+                  >
+                    <Image
+                      src={person.image || "/industry/scotty.jpeg"}
+                      alt={person.name}
+                      fill
+                      sizes="176px"
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="transition-transform duration-700 ease-out peer-hover:translate-y-4 peer-hover:[&>p:first-child]:scale-110">
-                <p
-                  className="font-fraunces text-white-100 relative z-1 mt-3 origin-center text-base font-medium transition-transform duration-500 ease-out md:text-lg xl:text-2xl"
-                  style={{
-                    filter: "drop-shadow(0px 2.79px 2.79px rgba(0, 0, 0, 0.25))",
-                  }}
-                >
-                  {person.name}
-                </p>
-                <p
-                  className="font-fraunces text-white-100 relative z-1 text-sm md:text-base xl:text-xl"
-                  style={{
-                    filter: "drop-shadow(0px 2.79px 2.79px rgba(0, 0, 0, 0.25))",
-                  }}
-                >
-                  {person.title} @ {person.company}
-                </p>
-              </div>
-            </li>
-          ))}
+                <div className="transition-transform duration-700 ease-out peer-hover:translate-y-4 peer-hover:[&>p:first-child]:scale-110">
+                  <p
+                    className="font-fraunces text-white-100 relative z-1 mt-3 origin-center text-base font-medium transition-transform duration-500 ease-out md:text-lg xl:text-2xl"
+                    style={{
+                      filter:
+                        "drop-shadow(0px 2.79px 2.79px rgba(0, 0, 0, 0.25))",
+                    }}
+                  >
+                    {person.name}
+                  </p>
+                  <p
+                    className="font-fraunces text-white-100 relative z-1 text-sm md:text-base xl:text-xl"
+                    style={{
+                      filter:
+                        "drop-shadow(0px 2.79px 2.79px rgba(0, 0, 0, 0.25))",
+                    }}
+                  >
+                    {person.title} @ {person.company}
+                  </p>
+                </div>
+              </>
+            );
+
+            return (
+              <li
+                key={`${person.position}-${person.name}`}
+                className="flex flex-col items-center text-center"
+              >
+                {person.linkedin ? (
+                  <a
+                    href={person.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${person.name} on LinkedIn`}
+                    className="flex w-full flex-col items-center text-center"
+                  >
+                    {card}
+                  </a>
+                ) : (
+                  card
+                )}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </section>
