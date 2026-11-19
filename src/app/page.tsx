@@ -22,9 +22,11 @@ export default function Home() {
       <Tracks />
       {/*
       <Schedule />
-      <Industry />
-      <Team /> */}
+      */}
       <Sponsors />
+      <Industry />
+      {/*
+      <Team /> */}
       <FAQ />
       <Footer />
     </main>
