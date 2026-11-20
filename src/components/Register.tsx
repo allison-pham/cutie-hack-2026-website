@@ -327,10 +327,10 @@ const Register = () => {
   return (
     <section
       id="register"
-      className="relative z-0 w-full overflow-visible px-6 py-16 text-blue-900 sm:px-14 lg:px-20"
+      className="relative w-full overflow-visible px-6 py-16 text-blue-900 sm:px-14 lg:px-20"
     >
       <div
-        className="pointer-events-none absolute top-0 left-1/2 z-0 w-[120%] max-w-none -translate-x-1/2 -translate-y-[26%] md:-translate-y-[32%] xl:hidden"
+        className="pointer-events-none absolute top-0 left-1/2 -z-4 w-[120%] max-w-none -translate-x-1/2 -translate-y-[26%] md:-translate-y-[32%] xl:hidden"
         aria-hidden
       >
         <Image
@@ -342,7 +342,7 @@ const Register = () => {
         />
       </div>
       <div
-        className="pointer-events-none absolute top-0 left-1/2 z-0 hidden w-[105%] max-w-none -translate-x-1/2 -translate-y-[8%] xl:block"
+        className="pointer-events-none absolute top-0 left-1/2 -z-4 hidden w-[105%] max-w-none -translate-x-1/2 -translate-y-[8%] xl:block"
         aria-hidden
       >
         <Image
