@@ -49,7 +49,7 @@ const Schedule = async () => {
         alt=""
         height={6676.45}
         width={2168.4}
-        className="absolute -z-3 w-full top-1/2 hidden lg:block"
+        className="absolute -z-3 w-full top-1/3 hidden lg:block"
       
       />
 

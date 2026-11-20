@@ -5,17 +5,17 @@ const titleShadow = "[text-shadow:0_6px_4px_rgba(0,0,0,0.25)]";
 const diamondShadow = "drop-shadow-[0_6px_4px_rgba(0,0,0,0.25)]";
 
 const SectionTitle = ({ children }: { children: string }) => (
-  <h2 className="flex items-center justify-center gap-3 leading-none sm:gap-10">
+  <h2 className="flex items-center justify-center gap-6 leading-none">
     <Image
       src="/diamond.svg"
       alt=""
       width={43}
       height={48}
-      className={`block h-8 w-auto sm:h-9 ${diamondShadow}`}
+      className={`block h-9 w-auto ${diamondShadow}`}
       aria-hidden
     />
     <span
-      className={`from-white-100 font-fraunces inline-block bg-linear-to-b to-orange-500 bg-clip-text pb-1 text-center text-[28px] font-semibold tracking-normal text-transparent sm:text-[32px] ${titleShadow}`}
+      className={`from-white-100 font-fraunces inline-block bg-linear-to-b to-orange-500 bg-clip-text pb-1 text-center text-[22px] font-semibold tracking-normal text-transparent ${titleShadow}`}
     >
       {children}
     </span>
@@ -24,7 +24,7 @@ const SectionTitle = ({ children }: { children: string }) => (
       alt=""
       width={43}
       height={48}
-      className={`block h-8 w-auto sm:h-9 ${diamondShadow}`}
+      className={`block h-9 w-auto ${diamondShadow}`}
       aria-hidden
     />
   </h2>
@@ -32,9 +32,9 @@ const SectionTitle = ({ children }: { children: string }) => (
 
 const Sponsors = () => {
   return (
-    <section id="sponsors" className="mt-6 w-full scroll-mt-15 text-black pt-10">
+    <section id="sponsors" className="relative mt-6 w-full scroll-mt-15 text-black pt-10">
       <SectionTitle>Sponsors</SectionTitle>
-      <div className="mx-auto mt-15 mb-20 grid w-fit grid-cols-[repeat(4,12vw)] gap-x-6 lg:gap-x-10 max-lg:grid-cols-[repeat(2,34vw)]">
+      <div className="mx-auto mt-15 grid w-fit grid-cols-[repeat(4,12vw)] gap-x-6 lg:gap-x-10 max-lg:grid-cols-[repeat(2,34vw)]">
         {SPONSORS.map((sponsor) => (
           <a
             key={sponsor.id}

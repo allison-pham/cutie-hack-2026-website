@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Project, PROJECTS } from "../data/pastprojects";
 
+const titleShadow = "[text-shadow:0_6px_4px_rgba(0,0,0,0.25)]";
+const diamondShadow = "drop-shadow-[0_6px_4px_rgba(0,0,0,0.25)]";
+
 const shelfContents = [
   "Blue",
   "Purple",
@@ -162,6 +165,32 @@ function Shelf({light, dark, className}:{light: string, dark: string, className?
   );
 }
 
+const SectionTitle = ({ children }: { children: string }) => (
+  <h2 className="flex items-center justify-center gap-6 leading-none">
+    <Image
+      src="/diamond.svg"
+      alt=""
+      width={43}
+      height={48}
+      className={`block h-9 w-auto ${diamondShadow}`}
+      aria-hidden
+    />
+    <span
+      className={`from-white-100 font-fraunces inline-block bg-linear-to-b to-orange-500 bg-clip-text pb-1 text-center text-[22px] font-semibold tracking-normal text-transparent ${titleShadow}`}
+    >
+      {children}
+    </span>
+    <Image
+      src="/diamond.svg"
+      alt=""
+      width={43}
+      height={48}
+      className={`block h-9 w-auto ${diamondShadow}`}
+      aria-hidden
+    />
+  </h2>
+);
+
 const PastProjects = () => {
     const [curIndex, setIndex] = useState(0);
     const curProject = PROJECTS[curIndex];
@@ -174,27 +203,7 @@ const PastProjects = () => {
 
   return (
     <section id="past-projects" className="relative w-full px-10 py-16 text-black">
-      <h2 className="flex items-center justify-center gap-10 pb-1 md:pb-3">
-        <Image
-          src="/diamond.svg"
-          alt=""
-          width={43}
-          height={48}
-          className="block h-9 w-auto drop-shadow-[0_6px_4px_rgba(0,0,0,0.25)]"
-          aria-hidden
-        />
-        <span className="from-white-100 font-fraunces inline-block bg-linear-to-b to-orange-500 bg-clip-text pb-1 text-[17px] font-semibold leading-normal tracking-normal text-transparent [text-shadow:0_6px_4px_rgba(0,0,0,0.25)] lg:text-[32px]">
-          Past Projects
-        </span>
-        <Image
-          src="/diamond.svg"
-          alt=""
-          width={43}
-          height={48}
-          className="block h-9 w-auto drop-shadow-[0_6px_4px_rgba(0,0,0,0.25)]"
-          aria-hidden
-        />
-      </h2>
+      <SectionTitle>Past Projects</SectionTitle>
       <div className="relative mx-auto mt-6 w-full lg:max-w-5xl">
       <article className="relative left-1/2 w-[95vw] -translate-x-1/2 lg:left-auto lg:mx-auto lg:w-full lg:max-w-xl lg:translate-x-0">
         <div className="relative aspect-[661/626] w-full">

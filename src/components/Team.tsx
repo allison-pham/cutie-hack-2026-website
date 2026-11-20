@@ -7,6 +7,9 @@ import ToggleTypes, { type ToggleLabel } from "./schedule/ToggleTypes";
 
 import { teamMembers, TeamMember, TeamType } from "../data/team";
 
+const titleShadow = "[text-shadow:0_6px_4px_rgba(0,0,0,0.25)]";
+const diamondShadow = "drop-shadow-[0_6px_4px_rgba(0,0,0,0.25)]";
+
 const teamLabels: Record<TeamType, ToggleLabel> = {
   Leads: {
     background: "bg-blue-900",
@@ -165,19 +168,18 @@ function TeamCard({ member }: { member: TeamMember }) {
 }
 
 const SectionTitle = ({ children }: { children: string }) => (
-  <h2
-    className="mb-10 flex items-center justify-center gap-6 leading-none"
-    style={{ filter: "drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25))" }}
-  >
+  <h2 className="flex items-center justify-center gap-6 leading-none">
     <Image
       src="/diamond.svg"
       alt=""
       width={43}
       height={48}
-      className="block h-9 w-auto"
+      className={`block h-9 w-auto ${diamondShadow}`}
       aria-hidden
     />
-    <span className="bg-linear-to-b from-white-100 to-orange-500 bg-clip-text text-center font-fraunces text-[22px] font-semibold tracking-normal text-transparent">
+    <span
+      className={`from-white-100 font-fraunces inline-block bg-linear-to-b to-orange-500 bg-clip-text pb-1 text-center text-[22px] font-semibold tracking-normal text-transparent ${titleShadow}`}
+    >
       {children}
     </span>
     <Image
@@ -185,7 +187,7 @@ const SectionTitle = ({ children }: { children: string }) => (
       alt=""
       width={43}
       height={48}
-      className="block h-9 w-auto"
+      className={`block h-9 w-auto ${diamondShadow}`}
       aria-hidden
     />
   </h2>
@@ -207,7 +209,7 @@ export default function Team() {
         activeTypes={new Set<TeamType>([selectedType])}
         onToggle={setSelectedType}
         labels={teamLabels}
-        className="mb-[18px] flex w-full min-w-0 gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex-wrap lg:justify-center lg:overflow-visible [&_button]:lg:px-5 lg:px-[16vw] lg:gap-4"
+        className="mb-[18px] mt-[30px] flex w-full min-w-0 gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex-wrap lg:justify-center lg:overflow-visible [&_button]:lg:px-5 lg:px-[16vw] lg:gap-4"
       />
 
       <div className={styles.teamGrid}>
