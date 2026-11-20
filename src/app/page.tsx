@@ -16,17 +16,13 @@ export default function Home() {
     <main className="relative isolate flex flex-col overflow-x-clip overflow-y-clip">
       <Hero />
       <Register />
-      <About />
-      
+      <About /> 
       <PastProjects />
       <Tracks />
-      {/*
       <Schedule />
-      */}
       <Sponsors />
       <Industry />
-      {/*
-      <Team /> */}
+      <Team /> 
       <FAQ />
       <Footer />
     </main>

@@ -1,75 +1,142 @@
 export type TeamType =
-  | "All"
   | "Leads"
+  | "Directors"
   | "Operations"
   | "Finance"
   | "Marketing"
   | "UI/UX Design"
-  | "SWE";
+  | "Software Engineering";
 
 export type TeamMember = {
   name: string;
   position: string;
-  team: Exclude<TeamType, "All">;
+  team: TeamType;
   bio: string;
   linkedin: string;
   github: string;
-  image: string;
+  sillyImage: string;
+  mogImage: string;
 };
 
 export const teamMembers: TeamMember[] = [
   {
-    name: "Lead Name",
+    name: "Allison Pham",
     position: "Director",
-    team: "Leads",
-    bio: "Short bio about the team member.",
-    linkedin: "#",
+    team: "Directors",
+    bio: "silly",
+    linkedin: "https://www.linkedin.com/in/imallisonpham/",
     github: "#",
-    image: "/team/placeholder.svg",
+    sillyImage: "/team/photos/silly/allison.png",
+    mogImage: "/team/photos/mogging/Allison.jpg",
   },
   {
-    name: "Operations Lead",
-    position: "Operations",
+    name: "Grace Hernandez",
+    position: "Director",
+    team: "Directors",
+    bio: "matcha",
+    linkedin: "https://www.linkedin.com/in/gracekhernandez/",
+    github: "#",
+    sillyImage: "/team/photos/silly/grace.jpeg",
+    mogImage: "/team/photos/mogging/Grace.jpg",
+  },
+  {
+    name: "Andrew Tanuwijaya",
+    position: "Ops",
     team: "Operations",
-    bio: "Short bio about the team member.",
-    linkedin: "#",
+    bio: "Bombastic",
+    linkedin: "https://www.linkedin.com/in/andrew-tanuwijaya-856111332/",
     github: "#",
-    image: "/team/placeholder.svg",
+    sillyImage: "/team/photos/silly/andrew.jpeg",
+    mogImage: "/team/photos/mogging/Andrew.jpg",
   },
   {
-    name: "Finance Lead",
+    name: "Kenneth Medrano",
+    position: "Ops",
+    team: "Operations",
+    bio: "Alrighty",
+    linkedin: "https://www.linkedin.com/in/kenneth-medrano-4264ab402/",
+    github: "#",
+    sillyImage: "/team/photos/silly/kenneth.jpeg",
+    mogImage: "/team/photos/mogging/Kenneth.jpg",
+  },
+  {
+    name: "Rhea Khurana",
     position: "Finance",
     team: "Finance",
-    bio: "Short bio about the team member.",
-    linkedin: "#",
+    bio: "😊💕",
+    linkedin: "https://www.linkedin.com/in/rhea-khurana",
     github: "#",
-    image: "/team/placeholder.svg",
+    sillyImage: "/team/photos/silly/rhea.jpeg",
+    mogImage: "/team/photos/mogging/Rhea.jpg",
   },
   {
-    name: "Marketing Lead",
+    name: "Joy Marcotte",
     position: "Marketing",
     team: "Marketing",
-    bio: "Short bio about the team member.",
-    linkedin: "#",
+    bio: "sleepy",
+    linkedin: "https://www.linkedin.com/in/joy-marcotte-640051203/",
     github: "#",
-    image: "/team/placeholder.svg",
+    sillyImage: "/team/photos/silly/joy.png",
+    mogImage: "/team/photos/mogging/Joy.jpg",
   },
   {
-    name: "Design Lead",
-    position: "UI/UX Designer",
+    name: "Lahari Karmuchi",
+    position: "Marketing",
+    team: "Marketing",
+    bio: "Dynamic",
+    linkedin: "https://www.linkedin.com/in/lahari-karmuchi-9381b42b7/",
+    github: "#",
+    sillyImage: "/team/photos/silly/lahari.jpeg",
+    mogImage: "/team/photos/mogging/Lahari.jpg",
+  },
+  {
+    name: "Calvin Lim",
+    position: "UI/UX",
     team: "UI/UX Design",
-    bio: "Short bio about the team member.",
-    linkedin: "#",
+    bio: "moo",
+    linkedin: "https://www.linkedin.com/in/calvinlim7/",
     github: "#",
-    image: "/team/placeholder.svg",
+    sillyImage: "/team/photos/silly/calvin.jpg",
+    mogImage: "/team/photos/mogging/Calvin.jpg",
   },
   {
-    name: "SWE Lead",
-    position: "Software Engineering",
-    team: "SWE",
-    bio: "Short bio about the team member.",
-    linkedin: "#",
+    name: "Christie Wong",
+    position: "UI/UX",
+    team: "UI/UX Design",
+    bio: "😛",
+    linkedin: "https://www.linkedin.com/in/christie-wong-8ba043293/",
     github: "#",
-    image: "/team/placeholder.svg",
+    sillyImage: "/team/photos/silly/christie.jpg",
+    mogImage: "/team/photos/mogging/Christie.jpg",
+  },
+  {
+    name: "Bestin Watts",
+    position: "SWE",
+    team: "Software Engineering",
+    bio: "hungry",
+    linkedin: "https://www.linkedin.com/in/bestinwatts/",
+    github: "#",
+    sillyImage: "/team/photos/silly/Bestin.jpg",
+    mogImage: "/team/photos/mogging/Bestin.jpg",
+  },
+  {
+    name: "Emily Tan",
+    position: "SWE",
+    team: "Software Engineering",
+    bio: "boba",
+    linkedin: "https://www.linkedin.com/in/emilytan29/",
+    github: "#",
+    sillyImage: "/team/photos/silly/emily.jpeg",
+    mogImage: "/team/photos/mogging/Emily.jpg",
+  },
+  {
+    name: "Rafael Moran",
+    position: "SWE",
+    team: "Software Engineering",
+    bio: "🎸",
+    linkedin: "https://www.linkedin.com/in/rafael-moran-3992b1377",
+    github: "#",
+    sillyImage: "/team/photos/silly/rafael.jpg",
+    mogImage: "/team/photos/mogging/Rafael.jpg",
   },
 ];

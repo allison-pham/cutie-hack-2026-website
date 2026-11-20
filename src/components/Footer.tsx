@@ -9,10 +9,10 @@ const opportunities = [
     title: "ACM at UCR",
     href: "http://instagram.com/acm_ucr",
   },
-  // {
-  //   title: "Feedback Survey",
-  //   href: "",
-  // },
+   {
+     title: "Feedback Survey",
+     href: "https://athena-wheat.vercel.app/cutiehack/feedback",
+   },
 ];
 
 const socialCards = [
