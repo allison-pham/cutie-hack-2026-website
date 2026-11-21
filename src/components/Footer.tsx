@@ -7,7 +7,7 @@ const opportunities = [
   },
   {
     title: "ACM at UCR",
-    href: "http://instagram.com/acm_ucr",
+    href: "https://acm.cs.ucr.edu/",
   },
    {
      title: "Feedback Survey",
