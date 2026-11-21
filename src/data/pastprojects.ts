@@ -64,7 +64,7 @@ export const PROJECTS: Project[] = [
     title: "Past Years",
     description: null,
     image: "/pastprojects/Cutie25ClosingCeremony.png",
-    link: "https://example.com",
+    link: "", //¯\(ツ)/¯
     testimonial: null,
     track: "",
     hackathon: "",
