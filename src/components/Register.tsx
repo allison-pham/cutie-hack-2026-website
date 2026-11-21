@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 type RoleCard = {
   id: string;
@@ -312,8 +312,70 @@ const RegisterCarousel = () => {
   );
 };
 
+const syncRayEnd = () => {
+  const rays = document.querySelectorAll<HTMLElement>("[data-ray-bg]");
+  const tree = [...document.querySelectorAll<HTMLElement>("[data-tree-bg]")].find(
+    (element) => element.getClientRects().length > 0,
+  );
+
+  rays.forEach((ray) => {
+    const clearClip = () => {
+      ray.style.clipPath = "";
+      ray.style.maskImage = "";
+      ray.style.webkitMaskImage = "";
+    };
+
+    if (!tree || ray.getClientRects().length === 0) {
+      clearClip();
+      return;
+    }
+
+    const rayRect = ray.getBoundingClientRect();
+    const treeRect = tree.getBoundingClientRect();
+    if (rayRect.height === 0) {
+      clearClip();
+      return;
+    }
+
+    const overlap = Math.min(
+      treeRect.height * 0.14,
+      Math.max(160, window.innerHeight * 0.22),
+    );
+    const end = treeRect.top - rayRect.top + overlap;
+    const clipBottom = rayRect.height - end;
+
+    if (clipBottom <= 0) {
+      clearClip();
+      return;
+    }
+
+    ray.style.maskImage = "";
+    ray.style.webkitMaskImage = "";
+    ray.style.clipPath = `inset(0 0 ${clipBottom}px 0)`;
+  });
+};
+
 const Register = () => {
   const [flippedIds, setFlippedIds] = useState<Set<string>>(new Set());
+
+  useLayoutEffect(() => {
+    syncRayEnd();
+
+    const observer = new ResizeObserver(syncRayEnd);
+    const main = document.querySelector("main");
+    if (main) observer.observe(main);
+    document
+      .querySelectorAll("[data-ray-bg], [data-tree-bg]")
+      .forEach((element) => observer.observe(element));
+
+    window.addEventListener("resize", syncRayEnd);
+    document.fonts?.ready.then(syncRayEnd);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", syncRayEnd);
+    };
+  }, []);
 
   const toggleFlip = (id: string) => {
     setFlippedIds((current) => {
@@ -330,6 +392,7 @@ const Register = () => {
       className="relative w-full overflow-visible px-6 py-16 text-blue-900 sm:px-14 lg:px-20"
     >
       <div
+        data-ray-bg
         className="pointer-events-none absolute top-0 left-1/2 -z-4 w-[120%] max-w-none -translate-x-1/2 -translate-y-[26%] md:-translate-y-[32%] xl:hidden"
         aria-hidden
       >
@@ -342,6 +405,7 @@ const Register = () => {
         />
       </div>
       <div
+        data-ray-bg
         className="pointer-events-none absolute top-0 left-1/2 -z-4 hidden w-[105%] max-w-none -translate-x-1/2 -translate-y-[8%] xl:block"
         aria-hidden
       >
